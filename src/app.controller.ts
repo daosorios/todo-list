@@ -17,9 +17,8 @@ export class AppController {
   }
 
  
-  //CREAR TAREA
+  //CREAR TAREAasxx
   @Post()
-
   createTarea(@Body()createTareaDto:TareaDto){
     return this.appService.createTarea(createTareaDto);
   }
