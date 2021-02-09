@@ -49,6 +49,8 @@ export class AppService {
 
   }
 
+  
+
   buscarTarea(id: string): RespuestaTareaDto {
     //buscando tarea
     const tarea = this.tareas.find(tarea => tarea.id === id);
@@ -71,6 +73,8 @@ export class AppService {
 
     return tareaRes;
   }
+
+
 
   actualizarEstado(id: string, estado: boolean) {
     const resul = this.tareas.find(tarea => tarea.id === id);
