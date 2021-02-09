@@ -18,7 +18,7 @@ export class AppService {
     createTareaDto.estado = false;
     this.tareas.push(createTareaDto);
     const respuesta = {
-      estado: 'Tarea creado exitosamente',
+      estado: 'Tarea creada exitosamente',
       id: createTareaDto.id
     }
     return respuesta;
@@ -49,7 +49,7 @@ export class AppService {
 
   }
 
-  
+
 
   buscarTarea(id: string): RespuestaTareaDto {
     //buscando tarea
